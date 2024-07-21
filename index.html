@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Volunteering Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Volunteering Exchange</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Volunteer Profile</a></li>
+                <li><a href="#opportunities">Opportunity Directory</a></li>
+                <li><a href="#search">Search & Filtering</a></li>
+                <li><a href="#reviews">Reviews & Ratings</a></li>
+                <li><a href="#communication">Communication</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <h2>Create Volunteer Profile</h2>
+        <form id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required>
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" name="availability" required>
+            <button type="submit">Create Profile</button>
+        </form>
+    </section>
+
+    <section id="opportunities">
+        <h2>Opportunity Directory</h2>
+        <div id="opportunity-list">
+            <!-- Opportunities will be listed here -->
+        </div>
+    </section>
+
+    <section id="search">
+        <h2>Search & Filtering</h2>
+        <input type="text" id="search-input" placeholder="Search for opportunities">
+        <button id="search-button">Search</button>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Volunteer Reviews & Ratings</h2>
+        <form id="review-form">
+            <label for="review">Write a Review:</label>
+            <textarea id="review" name="review" required></textarea>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="review-list">
+            <!-- Reviews will be listed here -->
+        </div>
+    </section>
+
+    <section id="communication">
+        <h2>Communication & Coordination</h2>
+        <form id="message-form">
+            <label for="message">Send a Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="message-list">
+            <!-- Messages will be displayed here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
